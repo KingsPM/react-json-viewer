@@ -64,7 +64,7 @@ var JSONViewer = class JSONViewer extends Component {
           <tbody>
             {loopObject(obj, (v, key) => {
               return (
-                <tr {...this.props.trProps}>
+                <tr {...this.props.trProps} key={key}>
                   <td {...this.props.tdProps} style={this.constructor.styles.td}>{`${key}`}</td>
                   {this.renderTd(v, key)}
                 </tr>
