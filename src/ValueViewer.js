@@ -10,7 +10,7 @@ class ValueViewer extends Component {
   r() {
     switch (getType(this.props.value)) {
       case "String":
-        return <span style={{ color: "rgb(255, 65, 60)" }}>{`"${this.props.value}"`}</span>;
+        return <span style={{ color: "rgb(255, 65, 60)" }}>{`${this.props.value}`}</span>;
       case "Boolean":
         return <span style={{ color: "rgb(31, 48, 255)" }}>{`${this.props.value}`}</span>;
       case "Number":
